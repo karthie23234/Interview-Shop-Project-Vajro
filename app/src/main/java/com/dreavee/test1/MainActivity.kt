@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         adapter.onItemClickListener = object : OnItemClickListener {
             override fun onAddClick(products: Products) {
                 lifecycleScope.launch {
-//                    addToCart(products)
+//                    addToCart(products)//
                     val gson = Gson()
                     val passableObject = gson.toJson(products)
                     val intent = Intent(this@MainActivity, ProductDetailsActivity::class.java)
